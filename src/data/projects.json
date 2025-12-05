@@ -1,0 +1,47 @@
+[
+  {
+    "id": 1,
+    "title": {
+      "en": "E-Commerce Platform",
+      "es": "Plataforma E-Commerce"
+    },
+    "description": {
+      "en": "A full-featured e-commerce platform with cart functionality, payment integration, and admin dashboard.",
+      "es": "Una plataforma de comercio electrónico completa con carrito de compras, integración de pagos y panel de administración."
+    },
+    "image": "/images/projects/ecommerce.jpg",
+    "technologies": ["react", "nodejs", "mongodb", "tailwind"],
+    "liveUrl": "https://example.com",
+    "githubUrl": "https://github.com"
+  },
+  {
+    "id": 2,
+    "title": {
+      "en": "Task Management App",
+      "es": "Aplicación de Gestión de Tareas"
+    },
+    "description": {
+      "en": "A collaborative task management application with real-time updates and team features.",
+      "es": "Una aplicación colaborativa de gestión de tareas con actualizaciones en tiempo real y funciones de equipo."
+    },
+    "image": "/images/projects/taskapp.jpg",
+    "technologies": ["nextjs", "typescript", "postgresql", "prisma"],
+    "liveUrl": "https://example.com",
+    "githubUrl": "https://github.com"
+  },
+  {
+    "id": 3,
+    "title": {
+      "en": "AI Chat Assistant",
+      "es": "Asistente de Chat con IA"
+    },
+    "description": {
+      "en": "An intelligent chat assistant powered by machine learning with natural language processing.",
+      "es": "Un asistente de chat inteligente impulsado por aprendizaje automático con procesamiento de lenguaje natural."
+    },
+    "image": "/images/projects/aichat.jpg",
+    "technologies": ["python", "react", "docker", "aws"],
+    "liveUrl": "https://example.com",
+    "githubUrl": "https://github.com"
+  }
+]
