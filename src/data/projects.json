@@ -11,8 +11,8 @@
     },
     "image": "/images/projects/ecommerce.jpg",
     "technologies": ["react", "nodejs", "mongodb", "tailwind"],
-    "liveUrl": "https://example.com",
-    "githubUrl": "https://github.com"
+    "liveUrl": "#",
+    "githubUrl": "#"
   },
   {
     "id": 2,
@@ -26,8 +26,8 @@
     },
     "image": "/images/projects/taskapp.jpg",
     "technologies": ["nextjs", "typescript", "postgresql", "prisma"],
-    "liveUrl": "https://example.com",
-    "githubUrl": "https://github.com"
+    "liveUrl": "#",
+    "githubUrl": "#"
   },
   {
     "id": 3,
@@ -41,7 +41,7 @@
     },
     "image": "/images/projects/aichat.jpg",
     "technologies": ["python", "react", "docker", "aws"],
-    "liveUrl": "https://example.com",
-    "githubUrl": "https://github.com"
+    "liveUrl": "#",
+    "githubUrl": "#"
   }
 ]

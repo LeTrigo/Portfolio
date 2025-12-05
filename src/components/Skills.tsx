@@ -9,10 +9,10 @@ export default function Skills() {
   const { t } = useLanguage();
 
   const categories = [
-    { key: "frontend", title: "Frontend" },
-    { key: "backend", title: "Backend" },
-    { key: "database", title: "Database" },
-    { key: "tools", title: "Tools" },
+    { key: "frontend", titleKey: "frontend" as const },
+    { key: "backend", titleKey: "backend" as const },
+    { key: "database", titleKey: "database" as const },
+    { key: "tools", titleKey: "tools" as const },
   ];
 
   return (
@@ -48,7 +48,7 @@ export default function Skills() {
                 transition={{ duration: 0.5, delay: categoryIndex * 0.1 }}
               >
                 <h3 className="text-xl font-semibold mb-6 text-gray-800 dark:text-gray-200">
-                  {category.title}
+                  {t.skills[category.titleKey]}
                 </h3>
                 <div className="flex flex-wrap gap-4">
                   {categorySkills.map((skill, index) => (

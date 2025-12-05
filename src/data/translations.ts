@@ -27,6 +27,10 @@ export const translations = {
     skills: {
       title: "My Skills",
       subtitle: "Technologies I work with",
+      frontend: "Frontend",
+      backend: "Backend",
+      database: "Database",
+      tools: "Tools",
     },
     projects: {
       title: "My Projects",
@@ -78,6 +82,10 @@ export const translations = {
     skills: {
       title: "Mis Habilidades",
       subtitle: "Tecnologías con las que trabajo",
+      frontend: "Frontend",
+      backend: "Backend",
+      database: "Base de Datos",
+      tools: "Herramientas",
     },
     projects: {
       title: "Mis Proyectos",

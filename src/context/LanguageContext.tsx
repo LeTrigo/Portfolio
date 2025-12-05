@@ -1,6 +1,6 @@
 "use client";
 
-import React, { createContext, useContext, useState, useCallback, useSyncExternalStore } from "react";
+import React, { createContext, useContext, useCallback, useSyncExternalStore } from "react";
 import { translations, Language, TranslationKey } from "@/data/translations";
 
 interface LanguageContextType {
@@ -14,56 +14,47 @@ const LanguageContext = createContext<LanguageContextType | undefined>(
 );
 
 // Create a simple store for language preference
-function createLanguageStore() {
-  let listeners: Array<() => void> = [];
-  
-  return {
-    subscribe(listener: () => void) {
-      listeners.push(listener);
-      return () => {
-        listeners = listeners.filter((l) => l !== listener);
-      };
-    },
-    getSnapshot(): Language {
-      if (typeof window === "undefined") return "en";
-      const saved = localStorage.getItem("language") as Language;
-      return saved === "es" ? "es" : "en";
-    },
-    getServerSnapshot(): Language {
-      return "en";
-    },
-    setLanguage(lang: Language) {
-      localStorage.setItem("language", lang);
-      listeners.forEach((listener) => listener());
-    },
+let listeners: Array<() => void> = [];
+
+function subscribe(listener: () => void) {
+  listeners.push(listener);
+  return () => {
+    listeners = listeners.filter((l) => l !== listener);
   };
 }
 
-const languageStore = createLanguageStore();
+function getSnapshot(): Language {
+  if (typeof window === "undefined") return "en";
+  const saved = localStorage.getItem("language") as Language;
+  return saved === "es" ? "es" : "en";
+}
+
+function getServerSnapshot(): Language {
+  return "en";
+}
+
+function setLanguageInStore(lang: Language) {
+  localStorage.setItem("language", lang);
+  listeners.forEach((listener) => listener());
+}
 
 export function LanguageProvider({ children }: { children: React.ReactNode }) {
-  const savedLanguage = useSyncExternalStore(
-    languageStore.subscribe,
-    languageStore.getSnapshot,
-    languageStore.getServerSnapshot
+  const language = useSyncExternalStore(
+    subscribe,
+    getSnapshot,
+    getServerSnapshot
   );
-  
-  const [language, setLanguageState] = useState<Language>(savedLanguage);
 
   const setLanguage = useCallback((lang: Language) => {
-    setLanguageState(lang);
-    languageStore.setLanguage(lang);
+    setLanguageInStore(lang);
   }, []);
-
-  // Sync with stored value on client
-  const currentLanguage = typeof window !== "undefined" ? language : savedLanguage;
 
   return (
     <LanguageContext.Provider
       value={{
-        language: currentLanguage,
+        language,
         setLanguage,
-        t: translations[currentLanguage],
+        t: translations[language],
       }}
     >
       {children}
