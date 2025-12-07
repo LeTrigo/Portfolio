@@ -38,7 +38,7 @@ export default function Contact() {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl font-bold mb-4 bg-gradient-to-r from-purple-600 to-blue-500 bg-clip-text text-transparent">
+          <h2 className="text-4xl font-bold mb-4 bg-linear-to-r from-purple-600 to-blue-500 bg-clip-text text-transparent">
             {t.contact.title}
           </h2>
           <p className="text-gray-600 dark:text-gray-400 text-lg">
@@ -117,7 +117,7 @@ export default function Contact() {
 
               <motion.button
                 type="submit"
-                className="w-full px-8 py-3 bg-gradient-to-r from-purple-600 to-blue-500 text-white rounded-lg font-medium hover:shadow-lg hover:shadow-purple-500/25 transition-shadow flex items-center justify-center gap-2"
+                className="w-full px-8 py-3 bg-linear-to-r from-purple-600 to-blue-500 text-white rounded-lg font-medium hover:shadow-lg hover:shadow-purple-500/25 transition-shadow flex items-center justify-center gap-2"
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
               >
@@ -135,7 +135,7 @@ export default function Contact() {
             transition={{ duration: 0.6 }}
             className="flex flex-col justify-center"
           >
-            <div className="bg-gradient-to-br from-purple-600/10 to-blue-500/10 dark:from-purple-600/20 dark:to-blue-500/20 p-8 rounded-2xl">
+            <div className="bg-linear-to-br from-purple-600/10 to-blue-500/10 dark:from-purple-600/20 dark:to-blue-500/20 p-8 rounded-2xl">
               <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-6">
                 {t.contact.subtitle}
               </h3>
@@ -162,7 +162,7 @@ export default function Contact() {
 
               {/* Decorative 3D Element */}
               <motion.div
-                className="relative h-32 rounded-xl bg-gradient-to-r from-purple-600 to-blue-500 overflow-hidden"
+                className="relative h-32 rounded-xl bg-linear-to-r from-purple-600 to-blue-500 overflow-hidden"
                 animate={{
                   rotateY: [0, 5, 0, -5, 0],
                 }}
@@ -176,7 +176,7 @@ export default function Contact() {
                 <div className="absolute inset-0 flex items-center justify-center">
                   <Mail className="w-16 h-16 text-white/30" />
                 </div>
-                <div className="absolute inset-0 bg-gradient-to-t from-purple-600/50 to-transparent" />
+                <div className="absolute inset-0 bg-linear-to-t from-purple-600/50 to-transparent" />
               </motion.div>
             </div>
           </motion.div>

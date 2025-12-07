@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import { Typewriter } from "react-simple-typewriter";
 import { ArrowDown, Mail } from "lucide-react";
 import { useLanguage } from "@/context/LanguageContext";
 
@@ -16,7 +17,7 @@ export default function Hero() {
       <div className="absolute inset-0 -z-10">
         <div className="absolute top-1/4 left-1/4 w-72 h-72 bg-purple-500/30 rounded-full blur-3xl animate-pulse" />
         <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-blue-500/30 rounded-full blur-3xl animate-pulse delay-1000" />
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-gradient-to-r from-purple-500/20 to-blue-500/20 rounded-full blur-3xl animate-spin-slow" />
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-linear-to-r from-purple-500/20 to-blue-500/20 rounded-full blur-3xl animate-spin-slow" />
       </div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
@@ -55,8 +56,16 @@ export default function Hero() {
               transition={{ delay: 0.3, type: "spring", stiffness: 200 }}
               className="text-5xl md:text-7xl font-bold mb-4"
             >
-              <span className="bg-gradient-to-r from-purple-600 via-pink-500 to-blue-500 bg-clip-text text-transparent">
-                {t.hero.name}
+              <span className="bg-linear-to-r from-purple-600 via-pink-500 to-blue-500 bg-clip-text text-transparent">
+                <Typewriter
+                  words={[`${t.hero.name} Trigo`]}
+                  loop={false}
+                  cursor
+                  cursorStyle="|"
+                  typeSpeed={120}
+                  deleteSpeed={80}
+                  delaySpeed={1000}
+                />
               </span>
             </motion.h1>
 
@@ -87,7 +96,7 @@ export default function Hero() {
             >
               <motion.a
                 href="#projects"
-                className="px-8 py-3 bg-gradient-to-r from-purple-600 to-blue-500 text-white rounded-full font-medium hover:shadow-lg hover:shadow-purple-500/25 transition-shadow"
+                className="px-8 py-3 bg-linear-to-r from-purple-600 to-blue-500 text-white rounded-full font-medium hover:shadow-lg hover:shadow-purple-500/25 transition-shadow"
                 whileHover={{ scale: 1.05, y: -2 }}
                 whileTap={{ scale: 0.95 }}
               >

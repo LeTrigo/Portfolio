@@ -9,7 +9,7 @@ export const translations = {
     },
     hero: {
       greeting: "Hi, I'm",
-      name: "Leonardo",
+      name: "Lautaro",
       role: "Full Stack Developer",
       description:
         "I build modern web applications with clean code and great user experiences.",
@@ -64,7 +64,7 @@ export const translations = {
     },
     hero: {
       greeting: "Hola, soy",
-      name: "Leonardo",
+      name: "Lautaro",
       role: "Desarrollador Full Stack",
       description:
         "Construyo aplicaciones web modernas con código limpio y excelentes experiencias de usuario.",

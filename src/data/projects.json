@@ -2,12 +2,12 @@
   {
     "id": 1,
     "title": {
-      "en": "E-Commerce Platform",
-      "es": "Plataforma E-Commerce"
+      "en": "Book E-Commerce Platform Simulation",
+      "es": "Simulación de Plataforma E-Commerce de Libros"
     },
     "description": {
-      "en": "A full-featured e-commerce platform with cart functionality, payment integration, and admin dashboard.",
-      "es": "Una plataforma de comercio electrónico completa con carrito de compras, integración de pagos y panel de administración."
+      "en": "Book E-Commerce platform simulation, featuring payment gateway and shopping cart.",
+      "es": "Simulación de Plataforma E-Commerce de Libros, con pasarela de pago y carrito de compras."
     },
     "image": "/images/projects/ecommerce.jpg",
     "technologies": ["react", "nodejs", "mongodb", "tailwind"],
@@ -17,30 +17,45 @@
   {
     "id": 2,
     "title": {
-      "en": "Task Management App",
-      "es": "Aplicación de Gestión de Tareas"
+      "en": "Dn-Graphic",
+      "es": "DN-Gráfica"
     },
     "description": {
-      "en": "A collaborative task management application with real-time updates and team features.",
-      "es": "Una aplicación colaborativa de gestión de tareas con actualizaciones en tiempo real y funciones de equipo."
+      "en": "",
+      "es": ""
     },
     "image": "/images/projects/taskapp.jpg",
-    "technologies": ["nextjs", "typescript", "postgresql", "prisma"],
+    "technologies": ["html", "css", "javascript"],
     "liveUrl": "#",
     "githubUrl": "#"
   },
   {
     "id": 3,
     "title": {
-      "en": "AI Chat Assistant",
-      "es": "Asistente de Chat con IA"
+      "en": "Book Searcher",
+      "es": "Buscador de libros"
     },
     "description": {
-      "en": "An intelligent chat assistant powered by machine learning with natural language processing.",
-      "es": "Un asistente de chat inteligente impulsado por aprendizaje automático con procesamiento de lenguaje natural."
+      "en": "",
+      "es": "."
     },
     "image": "/images/projects/aichat.jpg",
     "technologies": ["python", "react", "docker", "aws"],
+    "liveUrl": "#",
+    "githubUrl": "#"
+  },
+  {
+    "id": 4,
+    "title": {
+      "en": "Cafe Blog",
+      "es": "Blog del Cafe"
+    },
+    "description": {
+      "en": "",
+      "es": "."
+    },
+    "image": "/images/projects/aichat.jpg",
+    "technologies": ["", "", ""],
     "liveUrl": "#",
     "githubUrl": "#"
   }

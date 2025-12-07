@@ -8,7 +8,7 @@ export default function About() {
   const { t } = useLanguage();
 
   const stats = [
-    { icon: Briefcase, value: "3+", label: t.about.experience },
+    { icon: Briefcase, value: "2+", label: t.about.experience },
     { icon: FolderGit2, value: "20+", label: t.about.projects },
     { icon: Users, value: "15+", label: t.about.clients },
   ];
@@ -23,7 +23,7 @@ export default function About() {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl font-bold mb-4 bg-gradient-to-r from-purple-600 to-blue-500 bg-clip-text text-transparent">
+          <h2 className="text-4xl font-bold mb-4 bg-linear-to-r from-purple-600 to-blue-500 bg-clip-text text-transparent">
             {t.about.title}
           </h2>
           <p className="text-gray-600 dark:text-gray-400 max-w-2xl mx-auto text-lg">
@@ -45,7 +45,7 @@ export default function About() {
               style={{ transformStyle: "preserve-3d" }}
             >
               <div className="flex flex-col items-center text-center">
-                <div className="p-4 bg-gradient-to-r from-purple-600 to-blue-500 rounded-full mb-4">
+                <div className="p-4 bg-linear-to-r from-purple-600 to-blue-500 rounded-full mb-4">
                   <stat.icon className="w-8 h-8 text-white" />
                 </div>
                 <span className="text-4xl font-bold text-gray-900 dark:text-white mb-2">

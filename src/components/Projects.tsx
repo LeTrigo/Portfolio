@@ -30,7 +30,7 @@ export default function Projects() {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl font-bold mb-4 bg-gradient-to-r from-purple-600 to-blue-500 bg-clip-text text-transparent">
+          <h2 className="text-4xl font-bold mb-4 bg-linear-to-r from-purple-600 to-blue-500 bg-clip-text text-transparent">
             {t.projects.title}
           </h2>
           <p className="text-gray-600 dark:text-gray-400 text-lg">
@@ -51,7 +51,7 @@ export default function Projects() {
               style={{ transformStyle: "preserve-3d" }}
             >
               {/* Project Image */}
-              <div className="relative h-48 bg-gradient-to-br from-purple-500 to-blue-500">
+              <div className="relative h-48 bg-linear-to-br from-purple-500 to-blue-500">
                 <div className="absolute inset-0 flex items-center justify-center">
                   <div className="text-white text-6xl font-bold opacity-20">
                     {project.id}

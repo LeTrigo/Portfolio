@@ -28,9 +28,57 @@ const iconColors: Record<string, string> = {
   docker: "#2496ED",
   aws: "#FF9900",
   vscode: "#007ACC",
+  vite: "#646CFF",
+  bootstrap: "#7952B3",
 };
 
 const iconPaths: Record<string, ReactNode> = {
+  vite: (
+    <g>
+      <defs>
+        <linearGradient
+          id="vite-a"
+          x1="6"
+          x2="18"
+          y1="6"
+          y2="18"
+          gradientUnits="userSpaceOnUse"
+        >
+          <stop stopColor="#41D1FF" />
+          <stop offset="1" stopColor="#BD34FE" />
+        </linearGradient>
+        <linearGradient
+          id="vite-b"
+          x1="6"
+          x2="18"
+          y1="6"
+          y2="18"
+          gradientUnits="userSpaceOnUse"
+        >
+          <stop stopColor="#FFEA83" />
+          <stop offset="0.083" stopColor="#FFDD35" />
+          <stop offset="1" stopColor="#FFA800" />
+        </linearGradient>
+      </defs>
+      <path d="M12 2L3 7l9 15 9-15-9-5z" fill="url(#vite-a)" />
+      <path d="M12 2v20l9-15-9-5z" fill="url(#vite-b)" />
+    </g>
+  ),
+  bootstrap: (
+    <g>
+      <rect x="2" y="2" width="20" height="20" rx="4" fill="currentColor" />
+      <path
+        d="M9.5 7h3a2 2 0 0 1 0 4h-3zm0 4h3.5a2 2 0 0 1 0 4H9.5z"
+        fill="#fff"
+      />
+      <path
+        d="M9.5 7v10m3-10v10"
+        stroke="#fff"
+        strokeWidth="1.2"
+        strokeLinecap="round"
+      />
+    </g>
+  ),
   react: (
     <g>
       <circle cx="12" cy="12" r="2.5" fill="currentColor" />
@@ -156,7 +204,12 @@ const iconPaths: Record<string, ReactNode> = {
         stroke="currentColor"
         strokeWidth="2"
       />
-      <path d="M5 12c0 2.2 3.1 4 7 4s7-1.8 7-4" fill="none" stroke="currentColor" strokeWidth="2" />
+      <path
+        d="M5 12c0 2.2 3.1 4 7 4s7-1.8 7-4"
+        fill="none"
+        stroke="currentColor"
+        strokeWidth="2"
+      />
     </g>
   ),
   mysql: (
@@ -231,14 +284,8 @@ export default function TechIcon({ name, icon, size = "md" }: TechIconProps) {
       title={name}
       style={{ transformStyle: "preserve-3d" }}
     >
-      <svg
-        viewBox="0 0 24 24"
-        className="w-full h-full"
-        style={{ color }}
-      >
-        {iconPath || (
-          <circle cx="12" cy="12" r="10" fill="currentColor" />
-        )}
+      <svg viewBox="0 0 24 24" className="w-full h-full" style={{ color }}>
+        {iconPath || <circle cx="12" cy="12" r="10" fill="currentColor" />}
       </svg>
     </motion.div>
   );
