@@ -4,8 +4,14 @@ import { ThemeProvider } from "@/components/ThemeProvider";
 import { LanguageProvider } from "@/context/LanguageContext";
 
 export const metadata: Metadata = {
-  title: "Portfolio | Full Stack Developer",
-  description: "Modern portfolio showcasing projects and skills",
+  title: "Lautaro Trigo | Full Stack Developer",
+  description:
+    "Portfolio moderno mostrando mis proyectos y habilidades como desarrollador full stack.",
+  icons: {
+    icon: "/logo-web.svg",
+    shortcut: "/logo-web.svg",
+    apple: "/logo-web.svg",
+  },
 };
 
 export default function RootLayout({
