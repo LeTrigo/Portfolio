@@ -2,61 +2,108 @@
   {
     "id": 1,
     "title": {
-      "en": "Book E-Commerce Platform Simulation",
-      "es": "Simulación de Plataforma E-Commerce de Libros"
+      "en": "Acuarium",
+      "es": "Acuarium"
     },
     "description": {
-      "en": "Book E-Commerce platform simulation, featuring payment gateway and shopping cart.",
-      "es": "Simulación de Plataforma E-Commerce de Libros, con pasarela de pago y carrito de compras."
+      "en": "Acuarium is an e-commerce solution designed as a digital catalog for a physical business. The platform allows customers to explore the store's product inventory online and, to finalize a purchase, facilitates direct contact with the seller through a redirection to WhatsApp, thus streamlining personalized service. This project was fully developed with the MERN stack (MongoDB, Express.js, React, and Node.js). The main technical challenge and learning experience consisted of implementing a decoupled services architecture: A REST API was developed and deployed independently in Node.js and Express, responsible for all business logic and communication with the database. A Single Page Application (SPA) was created with React as the client to consume the API's data and render the user interface. This separation allowed me to deeply understand how to orchestrate communication between the frontend and backend, as well as manage the deployment and connection of independent services, including the configuration of the NoSQL database (MongoDB) in a production environment.",
+      "es": "Acuarium es una solución de e-commerce diseñada como un catálogo digital para un negocio físico. La plataforma permite a los clientes explorar el inventario de productos de la tienda de forma online y, para concretar la compra, facilita el contacto directo con el vendedor a través de una redirección a WhatsApp, agilizando así la atención personalizada.Este proyecto fue desarrollado íntegramente con el stack MERN (MongoDB, Express.js, React y Node.js). El principal desafío técnico y aprendizaje consistió en la implementación de una arquitectura de servicios desacoplados: Se desarrolló y desplegó de forma independiente una API REST en Node.js y Express, responsable de toda la lógica de negocio y la comunicación con la base de datos.Se creó una Single Page Application (SPA) con React como cliente para consumir los datos de la API y renderizar la interfaz de usuario. Esta separación me permitió comprender en profundidad cómo orquestar la comunicación entre el frontend y el backend, así como gestionar el despliegue y la conexión de servicios independientes, incluyendo la configuración de la base de datos NoSQL (MongoDB) en un entorno de producción."
     },
-    "image": "/images/projects/ecommerce.jpg",
-    "technologies": ["react", "nodejs", "mongodb", "tailwind"],
-    "liveUrl": "#",
-    "githubUrl": "#"
+    "image": "/img/acuarium.jpg",
+    "technologies": ["tailwind", "nextjs", "express", "mongodb"],
+    "liveUrl": "https://acuarium.lat/",
+    "githubUrl": "/private-code"
   },
   {
     "id": 2,
     "title": {
-      "en": "Dn-Graphic",
-      "es": "DN-Gráfica"
+      "en": "Oasis Books",
+      "es": "Libros Oasis"
     },
     "description": {
-      "en": "",
-      "es": ""
+      "en": "This web application is a functional demonstration of a shopping cart in the context of an online bookstore. The project implements the essential business logic for a user to select books from a catalog, add them to their cart, modify quantities, and see the dynamically updated purchase total. The main objective of this project was to thoroughly understand the mechanics of an e-commerce system. The development allowed me to implement the complete cart logic from scratch, including its state management (adding, deleting, and updating products). Additionally, it was key practice for learning how to structure code modularly, creating reusable functions that can be assigned to multiple interface components, thus optimizing code maintainability and scalability.",
+      "es": "Esta aplicación web es una demostración funcional de un carrito de compras en el contexto de una librería online. El proyecto implementa la lógica de negocio esencial para que un usuario pueda seleccionar libros de un catálogo, añadirlos a su carrito, modificar las cantidades y ver el total de la compra actualizado dinámicamente.El principal objetivo de este proyecto fue comprender a fondo la mecánica de un sistema de e-commerce. El desarrollo me permitió implementar desde cero la lógica completa del carrito, incluyendo la gestión de su estado (añadir, eliminar y actualizar productos). Además, fue una práctica clave para aprender a estructurar el código de forma modular, creando funciones reutilizables que pueden ser asignadas a múltiples componentes de la interfaz, optimizando así la mantenibilidad y escalabilidad del código."
     },
-    "image": "/images/projects/taskapp.jpg",
-    "technologies": ["html", "css", "javascript"],
-    "liveUrl": "#",
-    "githubUrl": "#"
+    "image": "/img/book-oasis.jpg",
+    "technologies": ["nodejs", "css", "nextjs"],
+    "liveUrl": "https://proyecto-react-eight-zeta.vercel.app/",
+    "githubUrl": "https://github.com/LeTrigo/Oasis-Books"
   },
   {
     "id": 3,
+    "title": {
+      "en": "Personal portfolio",
+      "es": "Portfolio personal"
+    },
+    "description": {
+      "en": "This is my personal portfolio, a digital platform designed to showcase a curated selection of my most outstanding projects. The development has focused on accessibility and user experience, implementing two key features: a theme switcher that allows toggling between light and dark modes, and a content translation system. These features aim to facilitate navigation and ensure that the content is understandable to a broader and more diverse audience.",
+      "es": "Este es mi portfolio personal, una plataforma digital concebida para exhibir una selección curada de mis proyectos más destacados. El desarrollo se ha centrado en la accesibilidad y la experiencia del usuario, implementando dos funcionalidades clave: un selector de tema que permite alternar entre modo claro y oscuro, y un sistema de traducción de contenido. Estas características tienen como objetivo facilitar la navegación y asegurar que el contenido sea comprensible para una audiencia más amplia y diversa."
+    },
+    "image": "/img/portfolio.jpg",
+    "technologies": ["nextjs", "tailwind", "typescript"],
+    "liveUrl": "#",
+    "githubUrl": "https://github.com/LeTrigo/Portfolio"
+  },
+
+  {
+    "id": 4,
+    "title": {
+      "en": "DN Graphic",
+      "es": "DN Gráfica"
+    },
+    "description": {
+      "en": "DN Gráfica is a conceptual landing page designed for the presentation of professional services, with a structure adaptable to any discipline or venture. The project was developed using fundamental web technologies such as HTML, CSS, and JavaScript. Special emphasis was placed on user experience through the implementation of dynamic animations on various interface elements to create a more engaging and interactive navigation.",
+      "es": "DN Gráfica es una landing page conceptual diseñada para la presentación de servicios profesionales, con una estructura adaptable a cualquier disciplina o emprendimiento. El proyecto fue desarrollado utilizando tecnologías web fundamentales como HTML, CSS y JavaScript. Se puso especial énfasis en la experiencia de usuario a través de la implementación de animaciones dinámicas en diversos elementos de la interfaz para crear una navegación más atractiva e interactiva."
+    },
+    "image": "/img/dn.jpg",
+    "technologies": ["html", "css", "javascript"],
+    "liveUrl": "https://dn-grafica.netlify.app/",
+    "githubUrl": "https://github.com/LeTrigo/DN-Grafica"
+  },
+  {
+    "id": 5,
+    "title": {
+      "en": "Frontend Store",
+      "es": "Frontend Store"
+    },
+    "description": {
+      "en": "Frontend Store is a simulation of an e-commerce store specializing in t-shirts, developed with HTML, CSS, and JavaScript. The project replicates the essential functionalities of an online store, from product display to a simulated payment gateway. A particular focus has been placed on improving the user experience by incorporating micro-animations on products and other interface elements, aiming to create a more fluid and aesthetically pleasing interaction.",
+      "es": "Frontend Store es una simulación de una tienda de e-commerce especializada en camisetas, desarrollada con HTML, CSS y JavaScript. El proyecto replica las funcionalidades esenciales de una tienda online, desde la visualización de productos hasta la simulación de una pasarela de pago. Se ha puesto un enfoque particular en la mejora de la experiencia de usuario a través de la incorporación de micro-animaciones en productos y otros elementos de la interfaz, buscando crear una interacción más fluida y estéticamente agradable."
+    },
+    "image": "/img/front-store.jpg",
+    "technologies": ["html", "css", "javascript"],
+    "liveUrl": "https://front-end-clothe-shop.netlify.app/",
+    "githubUrl": "https://github.com/LeTrigo/Clothe-Store"
+  },
+  {
+    "id": 6,
+    "title": {
+      "en": "Cafe Blog",
+      "es": "Blog del café"
+    },
+    "description": {
+      "en": "This project is a simulation of a coffee-themed blog, developed with HTML, CSS, and JavaScript. In addition to presenting articles, the platform includes a section for course registration. Attention has been paid to interactivity through animations in the interface. The most prominent technical feature is the implementation of a theme-switching system, allowing the user to toggle between a light and a dark color palette to enhance the reading experience and accessibility.",
+      "es": "Este proyecto es una simulación de un blog temático sobre café, desarrollado con HTML, CSS y JavaScript. Además de la presentación de artículos, la plataforma incluye una sección para la inscripción a cursos. Se ha puesto atención en la interactividad mediante animaciones en la interfaz. La característica técnica más destacada es la implementación de un sistema de cambio de tema, permitiendo al usuario alternar entre una paleta de colores clara y una oscura para mejorar la experiencia de lectura y accesibilidad."
+    },
+    "image": "/img/blog-cafe.jpg",
+    "technologies": ["html", "css", "javascript"],
+    "liveUrl": "https://blogdelcafepuro.netlify.app/",
+    "githubUrl": "https://github.com/LeTrigo/Front-End-BlogDeCaf-"
+  },
+
+  {
+    "id": 7,
     "title": {
       "en": "Book Searcher",
       "es": "Buscador de libros"
     },
     "description": {
-      "en": "",
-      "es": "."
+      "en": "This project is an application designed for searching books by title. The implementation involved developing a backend with Node.js and Express, and a frontend with Vite. One of the main features is the integration with an external API for data retrieval. During development, there was a deep dive into application state management and adapting the architecture for a production deployment using serverless functions on Vercel.",
+      "es": "Este proyecto es una aplicación diseñada para la búsqueda de libros por título. La implementación implicó el desarrollo de un backend con Node.js y Express, y un frontend con Vite. Una de las principales funcionalidades es la integración con una API externa para la obtención de datos. Durante el desarrollo, se profundizó en el manejo de estados de la aplicación y en la adaptación de la arquitectura para un despliegie en producción utilizando funciones serverless en Vercel."
     },
-    "image": "/images/projects/aichat.jpg",
-    "technologies": ["python", "react", "docker", "aws"],
-    "liveUrl": "#",
-    "githubUrl": "#"
-  },
-  {
-    "id": 4,
-    "title": {
-      "en": "Cafe Blog",
-      "es": "Blog del Cafe"
-    },
-    "description": {
-      "en": "",
-      "es": "."
-    },
-    "image": "/images/projects/aichat.jpg",
-    "technologies": ["", "", ""],
-    "liveUrl": "#",
-    "githubUrl": "#"
+    "image": "/img/book-searcher.jpg",
+    "technologies": ["express", "vite", "nodejs"],
+    "liveUrl": "https://book-searcher-bay.vercel.app/",
+    "githubUrl": "https://github.com/LeTrigo/Book-Searcher"
   }
 ]

@@ -8,7 +8,7 @@ export const skills: Skill[] = [
   // Frontend
   { name: "React", icon: "react", category: "frontend" },
   { name: "Next.js", icon: "nextjs", category: "frontend" },
-  // { name: "TypeScript", icon: "typescript", category: "frontend" },
+  { name: "TypeScript", icon: "typescript", category: "frontend" },
   { name: "JavaScript", icon: "javascript", category: "frontend" },
   { name: "Tailwind CSS", icon: "tailwind", category: "frontend" },
   { name: "HTML5", icon: "html", category: "frontend" },
@@ -29,7 +29,8 @@ export const skills: Skill[] = [
 
   // Tools
   { name: "Git", icon: "git", category: "tools" },
+  { name: "GitHub", icon: "github", category: "tools" },
   // { name: "Docker", icon: "docker", category: "tools" },
   // { name: "AWS", icon: "aws", category: "tools" },
-  { name: "VS Code", icon: "vscode", category: "tools" },
+  // { name: "VS Code", icon: "vscode", category: "tools" },
 ];

@@ -9,12 +9,12 @@ export default function About() {
 
   const stats = [
     { icon: Briefcase, value: "2+", label: t.about.experience },
-    { icon: FolderGit2, value: "20+", label: t.about.projects },
-    { icon: Users, value: "15+", label: t.about.clients },
+    { icon: FolderGit2, value: "15+", label: t.about.projects },
+    { icon: Users, value: "10+", label: t.about.clients },
   ];
 
   return (
-    <section id="about" className="py-20 bg-gray-50 dark:bg-gray-800/50">
+    <section id="about" className="py-20 bg-white dark:bg-slate-800/50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -23,10 +23,10 @@ export default function About() {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl font-bold mb-4 bg-linear-to-r from-purple-600 to-blue-500 bg-clip-text text-transparent">
+          <h2 className="text-4xl font-bold mb-4 bg-gradient-to-r from-blue-600 to-cyan-500 bg-clip-text text-transparent">
             {t.about.title}
           </h2>
-          <p className="text-gray-600 dark:text-gray-400 max-w-2xl mx-auto text-lg">
+          <p className="text-gray-900 dark:text-gray-100 max-w-2xl mx-auto text-lg">
             {t.about.description}
           </p>
         </motion.div>
@@ -41,17 +41,17 @@ export default function About() {
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
               whileHover={{ y: -5, rotateY: 5 }}
-              className="bg-white dark:bg-gray-900 p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow"
+              className="bg-gray-50 dark:bg-slate-900 p-8 rounded-2xl shadow-xl hover:shadow-2xl transition-all border border-gray-200 dark:border-slate-700"
               style={{ transformStyle: "preserve-3d" }}
             >
               <div className="flex flex-col items-center text-center">
-                <div className="p-4 bg-linear-to-r from-purple-600 to-blue-500 rounded-full mb-4">
+                <div className="p-4 bg-gradient-to-r from-blue-600 to-cyan-500 rounded-full mb-4 shadow-lg">
                   <stat.icon className="w-8 h-8 text-white" />
                 </div>
                 <span className="text-4xl font-bold text-gray-900 dark:text-white mb-2">
                   {stat.value}
                 </span>
-                <span className="text-gray-600 dark:text-gray-400">
+                <span className="text-gray-900 dark:text-gray-100 font-medium">
                   {stat.label}
                 </span>
               </div>

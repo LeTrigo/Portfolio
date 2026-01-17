@@ -15,6 +15,7 @@ export const translations = {
         "I build modern web applications with clean code and great user experiences.",
       cta: "View My Work",
       contact: "Contact Me",
+      available: "Available",
     },
     about: {
       title: "About Me",
@@ -51,7 +52,7 @@ export const translations = {
     },
     footer: {
       rights: "All rights reserved.",
-      madeWith: "Made with",
+      // madeWith: "Made with",
     },
   },
   es: {
@@ -70,6 +71,7 @@ export const translations = {
         "Construyo aplicaciones web modernas con código limpio y excelentes experiencias de usuario.",
       cta: "Ver Mi Trabajo",
       contact: "Contáctame",
+      available: "Disponible",
     },
     about: {
       title: "Sobre Mí",
@@ -106,7 +108,7 @@ export const translations = {
     },
     footer: {
       rights: "Todos los derechos reservados.",
-      madeWith: "Hecho con",
+      // madeWith: "Hecho con",
     },
   },
 };
