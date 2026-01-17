@@ -41,7 +41,7 @@
     },
     "image": "/img/portfolio.jpg",
     "technologies": ["nextjs", "tailwind", "typescript"],
-    "liveUrl": "#",
+    "liveUrl": "https://lautarotrigo.dev/",
     "githubUrl": "https://github.com/LeTrigo/Portfolio"
   },
 
