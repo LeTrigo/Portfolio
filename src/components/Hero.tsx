@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 import { Typewriter } from "react-simple-typewriter";
-import { ArrowDown, Mail } from "lucide-react";
+import { ArrowDown, Mail, Download } from "lucide-react";
 import { useLanguage } from "@/context/LanguageContext";
 
 export default function Hero() {
@@ -98,6 +98,16 @@ export default function Hero() {
               >
                 <Mail className="w-5 h-5" />
                 {t.hero.contact}
+              </motion.a>
+              <motion.a
+                href="/CV - Programador.pdf"
+                download
+                className="px-8 py-3 bg-gradient-to-r from-green-600 to-emerald-500 text-white rounded-full font-medium shadow-lg hover:shadow-xl hover:shadow-green-500/30 transition-all flex items-center justify-center gap-2"
+                whileHover={{ scale: 1.05, y: -2 }}
+                whileTap={{ scale: 0.95 }}
+              >
+                <Download className="w-5 h-5" />
+                {t.hero.downloadCV}
               </motion.a>
             </motion.div>
           </motion.div>

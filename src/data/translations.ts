@@ -15,6 +15,7 @@ export const translations = {
         "I build modern web applications with clean code and great user experiences.",
       cta: "View My Work",
       contact: "Contact Me",
+      downloadCV: "Download CV",
       available: "Available",
     },
     about: {
@@ -71,6 +72,7 @@ export const translations = {
         "Construyo aplicaciones web modernas con código limpio y excelentes experiencias de usuario.",
       cta: "Ver Mi Trabajo",
       contact: "Contáctame",
+      downloadCV: "Descargar CV",
       available: "Disponible",
     },
     about: {
