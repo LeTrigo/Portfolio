@@ -17,6 +17,21 @@
   {
     "id": 2,
     "title": {
+      "en": "Chilecito Pediatric Center",
+      "es": "Centro Pediátrico Chilecito"
+    },
+    "description": {
+      "en": "Modern and professional landing page designed for a pediatric center. The website clearly and accessibly presents all offered medical services, detailed institutional information, and a list of accepted health insurance plans. The design focuses on conveying trust and warmth, using a clean and responsive interface that facilitates navigation for parents and patients, ensuring quick access to vital information.",
+      "es": "Landing page moderna y profesional diseñada para un centro pediátrico. El sitio web presenta de manera clara y accesible todos los servicios médicos ofrecidos, información institucional detallada y el listado de obras sociales aceptadas. El diseño se centra en transmitir confianza y calidez, utilizando una interfaz limpia y responsiva que facilita la navegación para los padres y pacientes, asegurando un acceso rápido a la información vital."
+    },
+    "image": "/img/centro-pediatrico.jpg",
+    "technologies": ["vite", "tailwind"],
+    "liveUrl": "https://centropediatricochilecito.com.ar/",
+    "githubUrl": "/private-code"
+  },
+  {
+    "id": 3,
+    "title": {
       "en": "Oasis Books",
       "es": "Libros Oasis"
     },
@@ -30,7 +45,7 @@
     "githubUrl": "https://github.com/LeTrigo/Oasis-Books"
   },
   {
-    "id": 3,
+    "id": 4,
     "title": {
       "en": "Personal portfolio",
       "es": "Portfolio personal"
@@ -46,7 +61,7 @@
   },
 
   {
-    "id": 4,
+    "id": 5,
     "title": {
       "en": "DN Graphic",
       "es": "DN Gráfica"
@@ -61,7 +76,7 @@
     "githubUrl": "https://github.com/LeTrigo/DN-Grafica"
   },
   {
-    "id": 5,
+    "id": 6,
     "title": {
       "en": "Frontend Store",
       "es": "Frontend Store"
@@ -76,7 +91,7 @@
     "githubUrl": "https://github.com/LeTrigo/Clothe-Store"
   },
   {
-    "id": 6,
+    "id": 7,
     "title": {
       "en": "Cafe Blog",
       "es": "Blog del café"
@@ -92,7 +107,7 @@
   },
 
   {
-    "id": 7,
+    "id": 8,
     "title": {
       "en": "Book Searcher",
       "es": "Buscador de libros"
