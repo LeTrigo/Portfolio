@@ -1,7 +1,6 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Heart } from "lucide-react";
 import { useLanguage } from "@/context/LanguageContext";
 
 export default function Footer() {
@@ -15,7 +14,7 @@ export default function Footer() {
           {/* Logo */}
           <motion.a
             href="#home"
-            className="text-xl font-bold bg-gradient-to-r from-blue-600 to-cyan-500 bg-clip-text text-transparent"
+            className="text-xl font-bold bg-linear-to-r from-blue-600 to-cyan-500 bg-clip-text text-transparent"
             whileHover={{ scale: 1.05 }}
           >
             Portfolio

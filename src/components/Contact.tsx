@@ -6,7 +6,6 @@ import {
   Send,
   Github,
   Linkedin,
-  Twitter,
   Instagram,
   Facebook,
   CheckCircle,
@@ -100,7 +99,7 @@ export default function Contact() {
                     initial={{ scale: 0 }}
                     animate={{ scale: 1 }}
                     transition={{ delay: 0.2, type: "spring" }}
-                    className="w-20 h-20 bg-gradient-to-r from-blue-600 to-cyan-500 rounded-full flex items-center justify-center mx-auto mb-4"
+                    className="w-20 h-20 bg-linear-to-r from-blue-600 to-cyan-500 rounded-full flex items-center justify-center mx-auto mb-4"
                   >
                     <CheckCircle className="w-12 h-12 text-white" />
                   </motion.div>
@@ -112,7 +111,7 @@ export default function Contact() {
                   </p>
                   <button
                     onClick={() => setShowSuccess(false)}
-                    className="px-6 py-2 bg-gradient-to-r from-blue-600 to-cyan-500 text-white rounded-full font-medium hover:shadow-lg transition-all"
+                    className="px-6 py-2 bg-linear-to-r from-blue-600 to-cyan-500 text-white rounded-full font-medium hover:shadow-lg transition-all"
                   >
                     Cerrar
                   </button>
@@ -129,7 +128,7 @@ export default function Contact() {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl font-bold mb-4 bg-gradient-to-r from-blue-600 to-cyan-500 bg-clip-text text-transparent">
+          <h2 className="text-4xl font-bold mb-4 bg-linear-to-r from-blue-600 to-cyan-500 bg-clip-text text-transparent">
             {t.contact.title}
           </h2>
           <p className="text-gray-900 dark:text-gray-100 text-lg">
@@ -212,7 +211,7 @@ export default function Contact() {
               <motion.button
                 type="submit"
                 disabled={isSubmitting}
-                className="w-full px-8 py-3 bg-gradient-to-r from-blue-600 to-cyan-500 text-white rounded-lg font-medium shadow-lg hover:shadow-xl hover:shadow-blue-500/30 transition-all flex items-center justify-center gap-2 disabled:opacity-50 disabled:cursor-not-allowed"
+                className="w-full px-8 py-3 bg-linear-to-r from-blue-600 to-cyan-500 text-white rounded-lg font-medium shadow-lg hover:shadow-xl hover:shadow-blue-500/30 transition-all flex items-center justify-center gap-2 disabled:opacity-50 disabled:cursor-not-allowed"
                 whileHover={{ scale: isSubmitting ? 1 : 1.02 }}
                 whileTap={{ scale: isSubmitting ? 1 : 0.98 }}
               >
@@ -247,8 +246,8 @@ export default function Contact() {
             transition={{ duration: 0.6 }}
             className="flex flex-col justify-center"
           >
-            <div className="bg-gradient-to-br from-blue-50 to-cyan-50 dark:from-slate-800 dark:to-slate-900 p-8 rounded-2xl border border-gray-100 dark:border-slate-700">
-              <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-6">
+            <div className="bg-slate-900 p-8 rounded-2xl border border-slate-700 shadow-xl">
+              <h3 className="text-2xl font-bold text-white mb-6">
                 {t.contact.subtitle}
               </h3>
 
@@ -263,7 +262,7 @@ export default function Contact() {
                         ? undefined
                         : "noopener noreferrer"
                     }
-                    className="p-4 bg-white dark:bg-slate-800 rounded-xl shadow-md hover:shadow-lg transition-all border border-gray-100 dark:border-slate-700"
+                    className="p-4 bg-slate-800 rounded-xl shadow-md hover:shadow-lg transition-all border border-slate-700"
                     whileHover={{ scale: 1.1, rotateZ: 5 }}
                     initial={{ opacity: 0, y: 20 }}
                     whileInView={{ opacity: 1, y: 0 }}
@@ -271,19 +270,17 @@ export default function Contact() {
                     transition={{ delay: index * 0.1 }}
                     aria-label={social.label}
                   >
-                    <social.icon className="w-6 h-6 text-blue-600 dark:text-cyan-400" />
+                    <social.icon className="w-6 h-6 text-cyan-400" />
                   </motion.a>
                 ))}
               </div>
 
               {/* Email Display */}
-              <div className="mb-8 p-4 bg-white dark:bg-slate-800 rounded-xl border border-gray-100 dark:border-slate-700">
-                <p className="text-sm text-gray-600 dark:text-gray-400 mb-1">
-                  Email:
-                </p>
+              <div className="mb-8 p-4 bg-slate-800 rounded-xl border border-slate-700">
+                <p className="text-sm text-slate-400 mb-1">Email:</p>
                 <a
                   href="mailto:letsoftwaredevelopment@gmail.com"
-                  className="text-blue-600 dark:text-cyan-400 font-medium hover:underline"
+                  className="text-cyan-400 font-medium hover:underline"
                 >
                   letsoftwaredevelopment@gmail.com
                 </a>
@@ -291,7 +288,7 @@ export default function Contact() {
 
               {/* Decorative 3D Element */}
               <motion.div
-                className="relative h-32 rounded-xl bg-gradient-to-r from-blue-600 to-cyan-500 overflow-hidden shadow-lg"
+                className="relative h-32 rounded-xl bg-linear-to-r from-blue-600 to-cyan-500 overflow-hidden shadow-lg"
                 animate={{
                   rotateY: [0, 5, 0, -5, 0],
                 }}

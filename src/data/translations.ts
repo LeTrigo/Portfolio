@@ -4,18 +4,20 @@ export const translations = {
       home: "Home",
       about: "About",
       skills: "Skills",
+      cybersecurity: "Cybersecurity",
       projects: "Projects",
       contact: "Contact",
     },
     hero: {
       greeting: "Hi, I'm",
       name: "Lautaro",
-      role: "Full Stack Developer",
+      role: "Full Stack Developer & Cybersecurity Analyst",
       description:
-        "I build modern web applications with clean code and great user experiences.",
+        "I am a Security-Focused Full Stack Developer specializing in the MERN stack and Next.js. My approach goes beyond writing clean, functional code—I build robust digital solutions with security integrated from the very first line.\n\nCurrently pursuing degrees in both Computer Science and Cyberdefense, and certified by Google in Network Security, I bridge the gap between software development and infrastructure protection to deliver fast, scalable, and resilient applications.",
       cta: "View My Work",
       contact: "Contact Me",
       downloadCV: "Download CV",
+      cvPath: "/CV-English.pdf",
       available: "Available",
     },
     about: {
@@ -33,6 +35,20 @@ export const translations = {
       backend: "Backend",
       database: "Database",
       tools: "Tools",
+    },
+    cybersecurity: {
+      title: "Cybersecurity",
+      subtitle: "15 DOCX practice reports, labs and analysis work",
+      badge: "Google Cybersecurity Certificate | {count} practices",
+      intro:
+        "I focus on documenting practical cybersecurity exercises in a clear, professional format that is easy to review.",
+      highlightTitle: "Security-focused work",
+      highlightDescription:
+        "This section groups my practical reports, lab notes and case studies so they live apart from web development projects.",
+      emptyTitle: "Ready to review the full collection",
+      emptyDescription:
+        "Each card opens the original DOCX stored in the public folder, so the portfolio can show both context and source material.",
+      cta: "Talk about a cybersecurity project",
     },
     projects: {
       title: "My Projects",
@@ -61,18 +77,20 @@ export const translations = {
       home: "Inicio",
       about: "Sobre mí",
       skills: "Habilidades",
+      cybersecurity: "Ciberseguridad",
       projects: "Proyectos",
       contact: "Contacto",
     },
     hero: {
       greeting: "Hola, soy",
       name: "Lautaro",
-      role: "Desarrollador Full Stack",
+      role: "Desarrollador Full Stack & Analista de Ciberseguridad",
       description:
-        "Construyo aplicaciones web modernas con código limpio y excelentes experiencias de usuario.",
+        "Soy un Desarrollador Full Stack enfocado en la seguridad, especializado en el stack MERN y Next.js. Mi enfoque va más allá de escribir código limpio y funcional: construyo soluciones digitales robustas con la seguridad integrada desde la primera línea.\n\nActualmente cursando las carreras de Informática y Ciberdefensa, y certificado por Google en Seguridad de Redes, cierro la brecha entre el desarrollo de software y la protección de infraestructura para entregar aplicaciones rápidas, escalables y resilientes.",
       cta: "Ver Mi Trabajo",
       contact: "Contáctame",
       downloadCV: "Descargar CV",
+      cvPath: "/CV-Spanish.pdf",
       available: "Disponible",
     },
     about: {
@@ -90,6 +108,20 @@ export const translations = {
       backend: "Backend",
       database: "Base de Datos",
       tools: "Herramientas",
+    },
+    cybersecurity: {
+      title: "Ciberseguridad",
+      subtitle: "15 informes DOCX de práctica, laboratorios y análisis",
+      badge: "Certificado de Google Cybersecurity | {count} prácticas",
+      intro:
+        "Me enfoco en documentar ejercicios prácticos de ciberseguridad con un formato claro y profesional, fácil de revisar.",
+      highlightTitle: "Trabajo orientado a seguridad",
+      highlightDescription:
+        "Esta sección agrupa mis informes prácticos, notas de laboratorio y estudios de caso, separados de los proyectos web.",
+      emptyTitle: "Lista para revisar la colección completa",
+      emptyDescription:
+        "Cada tarjeta abre el DOCX original guardado en la carpeta pública, así el portfolio muestra tanto contexto como el material fuente.",
+      cta: "Hablar sobre un proyecto de ciberseguridad",
     },
     projects: {
       title: "Mis Proyectos",

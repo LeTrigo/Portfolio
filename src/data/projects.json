@@ -2,21 +2,6 @@
   {
     "id": 1,
     "title": {
-      "en": "Acuarium",
-      "es": "Acuarium"
-    },
-    "description": {
-      "en": "Acuarium is an e-commerce solution designed as a digital catalog for a physical business. The platform allows customers to explore the store's product inventory online and, to finalize a purchase, facilitates direct contact with the seller through a redirection to WhatsApp, thus streamlining personalized service. This project was fully developed with the MERN stack (MongoDB, Express.js, React, and Node.js). The main technical challenge and learning experience consisted of implementing a decoupled services architecture: A REST API was developed and deployed independently in Node.js and Express, responsible for all business logic and communication with the database. A Single Page Application (SPA) was created with React as the client to consume the API's data and render the user interface. This separation allowed me to deeply understand how to orchestrate communication between the frontend and backend, as well as manage the deployment and connection of independent services, including the configuration of the NoSQL database (MongoDB) in a production environment.",
-      "es": "Acuarium es una solución de e-commerce diseñada como un catálogo digital para un negocio físico. La plataforma permite a los clientes explorar el inventario de productos de la tienda de forma online y, para concretar la compra, facilita el contacto directo con el vendedor a través de una redirección a WhatsApp, agilizando así la atención personalizada.Este proyecto fue desarrollado íntegramente con el stack MERN (MongoDB, Express.js, React y Node.js). El principal desafío técnico y aprendizaje consistió en la implementación de una arquitectura de servicios desacoplados: Se desarrolló y desplegó de forma independiente una API REST en Node.js y Express, responsable de toda la lógica de negocio y la comunicación con la base de datos.Se creó una Single Page Application (SPA) con React como cliente para consumir los datos de la API y renderizar la interfaz de usuario. Esta separación me permitió comprender en profundidad cómo orquestar la comunicación entre el frontend y el backend, así como gestionar el despliegue y la conexión de servicios independientes, incluyendo la configuración de la base de datos NoSQL (MongoDB) en un entorno de producción."
-    },
-    "image": "/img/acuarium.jpg",
-    "technologies": ["tailwind", "nextjs", "express", "mongodb"],
-    "liveUrl": "https://acuarium.lat/",
-    "githubUrl": "/private-code"
-  },
-  {
-    "id": 2,
-    "title": {
       "en": "Chilecito Pediatric Center",
       "es": "Centro Pediátrico Chilecito"
     },
@@ -30,7 +15,7 @@
     "githubUrl": "/private-code"
   },
   {
-    "id": 3,
+    "id": 2,
     "title": {
       "en": "Oasis Books",
       "es": "Libros Oasis"
@@ -45,7 +30,7 @@
     "githubUrl": "https://github.com/LeTrigo/Oasis-Books"
   },
   {
-    "id": 4,
+    "id": 3,
     "title": {
       "en": "Personal portfolio",
       "es": "Portfolio personal"
@@ -61,7 +46,7 @@
   },
 
   {
-    "id": 5,
+    "id": 4,
     "title": {
       "en": "DN Graphic",
       "es": "DN Gráfica"
@@ -76,7 +61,7 @@
     "githubUrl": "https://github.com/LeTrigo/DN-Grafica"
   },
   {
-    "id": 6,
+    "id": 5,
     "title": {
       "en": "Frontend Store",
       "es": "Frontend Store"
@@ -91,7 +76,7 @@
     "githubUrl": "https://github.com/LeTrigo/Clothe-Store"
   },
   {
-    "id": 7,
+    "id": 6,
     "title": {
       "en": "Cafe Blog",
       "es": "Blog del café"
@@ -107,7 +92,7 @@
   },
 
   {
-    "id": 8,
+    "id": 7,
     "title": {
       "en": "Book Searcher",
       "es": "Buscador de libros"

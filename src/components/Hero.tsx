@@ -70,7 +70,7 @@ export default function Hero() {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.7 }}
-              className="text-gray-900 dark:text-gray-100 max-w-xl mx-auto lg:mx-0 mb-8 text-lg"
+              className="text-gray-900 dark:text-gray-100 max-w-xl mx-auto lg:mx-0 mb-8 text-lg whitespace-pre-wrap"
             >
               {t.hero.description}
             </motion.p>
@@ -84,7 +84,7 @@ export default function Hero() {
             >
               <motion.a
                 href="#projects"
-                className="px-8 py-3 bg-gradient-to-r from-blue-600 to-cyan-500 text-white rounded-full font-medium shadow-lg hover:shadow-xl hover:shadow-blue-500/30 transition-all"
+                className="px-8 py-3 bg-linear-to-r from-blue-600 to-cyan-500 text-white rounded-full font-medium shadow-lg hover:shadow-xl hover:shadow-blue-500/30 transition-all"
                 whileHover={{ scale: 1.05, y: -2 }}
                 whileTap={{ scale: 0.95 }}
               >
@@ -100,9 +100,10 @@ export default function Hero() {
                 {t.hero.contact}
               </motion.a>
               <motion.a
-                href="/CV - Programador.pdf"
+                key={t.hero.cvPath}
+                href={t.hero.cvPath}
                 download
-                className="px-8 py-3 bg-gradient-to-r from-green-600 to-emerald-500 text-white rounded-full font-medium shadow-lg hover:shadow-xl hover:shadow-green-500/30 transition-all flex items-center justify-center gap-2"
+                className="px-8 py-3 bg-linear-to-r from-green-600 to-emerald-500 text-white rounded-full font-medium shadow-lg hover:shadow-xl hover:shadow-green-500/30 transition-all flex items-center justify-center gap-2 cursor-pointer"
                 whileHover={{ scale: 1.05, y: -2 }}
                 whileTap={{ scale: 0.95 }}
               >
@@ -125,14 +126,15 @@ export default function Hero() {
               transition={{ duration: 0.3 }}
             >
               {/* Decorative Rings */}
-              <div className="absolute inset-0 rounded-full bg-gradient-to-br from-blue-600 to-cyan-500 opacity-20 blur-2xl scale-110 animate-pulse" />
+              <div className="absolute inset-0 rounded-full bg-linear-to-br from-blue-600 to-cyan-500 opacity-20 blur-2xl scale-110 animate-pulse" />
               <div
-                className="absolute -inset-4 rounded-full bg-gradient-to-br from-blue-600 to-cyan-500 opacity-30 animate-spin-slow"
+                className="absolute -inset-4 rounded-full bg-linear-to-br from-blue-600 to-cyan-500 opacity-30 animate-spin-slow"
                 style={{ animationDuration: "8s" }}
               />
 
               {/* Image Container */}
-              <div className="relative w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-white dark:border-slate-800 shadow-2xl bg-gradient-to-br from-gray-100 to-gray-200 dark:from-slate-800 dark:to-slate-700">
+              <div className="relative w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-white dark:border-slate-800 shadow-2xl bg-linear-to-br from-gray-100 to-gray-200 dark:from-slate-800 dark:to-slate-700">
+                {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
                   src="/img/profile.png"
                   alt="Profile"
@@ -142,7 +144,7 @@ export default function Hero() {
 
               {/* Floating Badge */}
               <motion.div
-                className="absolute -bottom-4 -right-4 bg-gradient-to-r from-blue-600 to-cyan-500 text-white px-6 py-3 rounded-full shadow-lg font-medium"
+                className="absolute -bottom-4 -right-4 bg-linear-to-r from-blue-600 to-cyan-500 text-white px-6 py-3 rounded-full shadow-lg font-medium"
                 animate={{ y: [0, -8, 0] }}
                 transition={{
                   duration: 2,

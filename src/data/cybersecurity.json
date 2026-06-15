@@ -1,0 +1,28 @@
+[
+  {
+    "id": 1,
+    "title": {
+      "en": "Vulnerability Analysis Lab",
+      "es": "Laboratorio de Análisis de Vulnerabilidades"
+    },
+    "description": {
+      "en": "Detailed report on network scanning and service identification using professional tools.",
+      "es": "Reporte detallado sobre escaneo de red e identificación de servicios utilizando herramientas profesionales."
+    },
+    "tools": ["Nmap", "Wireshark", "Metasploit"],
+    "file": "/docs/vulnerability_analysis.pdf"
+  },
+  {
+    "id": 2,
+    "title": {
+      "en": "Technical Security Audit",
+      "es": "Auditoría Técnica de Seguridad"
+    },
+    "description": {
+      "en": "Assessment of system hardening and identification of misconfigurations in local environments.",
+      "es": "Evaluación de hardening de sistemas e identificación de malas configuraciones en entornos locales."
+    },
+    "tools": ["Lynis", "OpenVAS"],
+    "file": "/docs/security_audit.pdf"
+  }
+]

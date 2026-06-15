@@ -11,6 +11,7 @@ const navItems = [
   { key: "home", href: "#home" },
   { key: "about", href: "#about" },
   { key: "skills", href: "#skills" },
+  { key: "cybersecurity", href: "#cybersecurity" },
   { key: "projects", href: "#projects" },
   { key: "contact", href: "#contact" },
 ];
@@ -26,7 +27,7 @@ export default function Navbar() {
           {/* Logo */}
           <motion.a
             href="#home"
-            className="text-2xl font-bold bg-gradient-to-r from-blue-600 to-cyan-500 bg-clip-text text-transparent"
+            className="text-2xl font-bold b-linear-to-r from-blue-600 to-cyan-500 bg-clip-text text-transparent"
             whileHover={{ scale: 1.05 }}
           >
             Portfolio

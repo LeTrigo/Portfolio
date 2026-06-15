@@ -19,8 +19,7 @@ import {
   SiMysql,
   SiGithub,
 } from "react-icons/si";
-import { VscCode } from "react-icons/vsc";
-import { IconType } from "react-icons";
+import type { ComponentType, CSSProperties } from "react";
 
 interface TechIconProps {
   name: string;
@@ -78,27 +77,31 @@ const VSCodeIcon = ({ className }: { className?: string }) => (
   </svg>
 );
 
-const iconMap: Record<string, IconType | typeof ViteIcon | typeof VSCodeIcon> =
-  {
-    react: SiReact,
-    nextjs: SiNextdotjs,
-    nodejs: SiNodedotjs,
-    css: SiCss3,
-    html: SiHtml5,
-    tailwind: SiTailwindcss,
-    express: SiExpress,
-    mongodb: SiMongodb,
-    vite: ViteIcon as any,
-    javascript: SiJavascript,
-    typescript: SiTypescript,
-    git: SiGit,
-    github: SiGithub,
-    docker: SiDocker,
-    bootstrap: SiBootstrap,
-    postgresql: SiPostgresql,
-    mysql: SiMysql,
-    vscode: VSCodeIcon as any,
-  };
+type TechIconComponent = ComponentType<{
+  className?: string;
+  style?: CSSProperties;
+}>;
+
+const iconMap: Record<string, TechIconComponent> = {
+  react: SiReact,
+  nextjs: SiNextdotjs,
+  nodejs: SiNodedotjs,
+  css: SiCss3,
+  html: SiHtml5,
+  tailwind: SiTailwindcss,
+  express: SiExpress,
+  mongodb: SiMongodb,
+  vite: ViteIcon,
+  javascript: SiJavascript,
+  typescript: SiTypescript,
+  git: SiGit,
+  github: SiGithub,
+  docker: SiDocker,
+  bootstrap: SiBootstrap,
+  postgresql: SiPostgresql,
+  mysql: SiMysql,
+  vscode: VSCodeIcon,
+};
 
 const iconColors: Record<string, string> = {
   react: "#61DAFB",
@@ -145,16 +148,10 @@ export default function TechIcon({ name, icon, size = "md" }: TechIconProps) {
       style={{ transformStyle: "preserve-3d" }}
     >
       {Icon ? (
-        icon === "vite" ? (
-          <ViteIcon className={iconSizeClasses[size]} />
-        ) : icon === "vscode" ? (
-          <VSCodeIcon className={iconSizeClasses[size]} />
-        ) : (
-          <Icon
-            className={iconSizeClasses[size]}
-            style={{ color: color !== "none" ? color : undefined }}
-          />
-        )
+        <Icon
+          className={iconSizeClasses[size]}
+          style={{ color: color !== "none" ? color : undefined }}
+        />
       ) : (
         <span className="text-xs text-gray-400 font-bold">?</span>
       )}
