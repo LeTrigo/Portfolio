@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import { Typewriter } from "react-simple-typewriter";
 import { ArrowDown, Mail, Download } from "lucide-react";
+import Image from "next/image";
 import { useLanguage } from "@/context/LanguageContext";
 
 export default function Hero() {
@@ -14,7 +15,7 @@ export default function Hero() {
       className="min-h-screen flex items-center justify-center relative overflow-hidden pt-16 bg-white dark:bg-slate-900"
     >
       {/* Animated Background */}
-      <div className="absolute inset-0 -z-10">
+      <div className="absolute inset-0 -z-10 hidden md:block">
         <div className="absolute top-1/4 left-1/4 w-72 h-72 bg-cyan-500/30 rounded-full blur-3xl animate-pulse" />
         <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-blue-500/30 rounded-full blur-3xl animate-pulse delay-1000" />
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-linear-to-r from-slate-600/20 to-cyan-500/20 rounded-full blur-3xl animate-spin-slow" />
@@ -126,19 +127,21 @@ export default function Hero() {
               transition={{ duration: 0.3 }}
             >
               {/* Decorative Rings */}
-              <div className="absolute inset-0 rounded-full bg-linear-to-br from-blue-600 to-cyan-500 opacity-20 blur-2xl scale-110 animate-pulse" />
+              <div className="absolute inset-0 hidden md:block rounded-full bg-linear-to-br from-blue-600 to-cyan-500 opacity-20 blur-2xl scale-110 animate-pulse" />
               <div
-                className="absolute -inset-4 rounded-full bg-linear-to-br from-blue-600 to-cyan-500 opacity-30 animate-spin-slow"
+                className="absolute -inset-4 hidden md:block rounded-full bg-linear-to-br from-blue-600 to-cyan-500 opacity-30 animate-spin-slow"
                 style={{ animationDuration: "8s" }}
               />
 
               {/* Image Container */}
               <div className="relative w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-white dark:border-slate-800 shadow-2xl bg-linear-to-br from-gray-100 to-gray-200 dark:from-slate-800 dark:to-slate-700">
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img
+                <Image
                   src="/img/profile.png"
                   alt="Profile"
-                  className="w-full h-full object-cover"
+                  fill
+                  priority
+                  sizes="(max-width: 768px) 256px, 320px"
+                  className="object-cover"
                 />
               </div>
 

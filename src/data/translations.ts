@@ -38,7 +38,7 @@ export const translations = {
     },
     cybersecurity: {
       title: "Cybersecurity",
-      subtitle: "15 DOCX practice reports, labs and analysis work",
+      subtitle: "15 documents practice reports, labs and analysis work",
       badge: "Google Cybersecurity Certificate | {count} practices",
       intro:
         "I focus on documenting practical cybersecurity exercises in a clear, professional format that is easy to review.",
@@ -111,7 +111,7 @@ export const translations = {
     },
     cybersecurity: {
       title: "Ciberseguridad",
-      subtitle: "15 informes DOCX de práctica, laboratorios y análisis",
+      subtitle: "15 informes de práctica, laboratorios y análisis",
       badge: "Certificado de Google Cybersecurity | {count} prácticas",
       intro:
         "Me enfoco en documentar ejercicios prácticos de ciberseguridad con un formato claro y profesional, fácil de revisar.",

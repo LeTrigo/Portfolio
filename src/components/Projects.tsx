@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import { ExternalLink, Github } from "lucide-react";
+import Image from "next/image";
 import { useLanguage } from "@/context/LanguageContext";
 import projectsData from "@/data/projects.json";
 import TechIcon from "./TechIcon";
@@ -65,11 +66,12 @@ export default function Projects() {
                       {project.id}
                     </div>
                   </div>
-                  {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img
+                  <Image
                     src={project.image}
                     alt={project.title[language]}
-                    className="object-cover w-full h-full absolute inset-0"
+                    fill
+                    sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                    className="object-cover"
                     style={{ zIndex: 0, opacity: 0.7 }}
                   />
                 </div>
